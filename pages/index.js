@@ -16,31 +16,9 @@ export default function Home({ data }) {
       </Head>
 
       <main className={styles.main}>
-        {console.log(
-          data.map(
-            ({
-              country: {
-                england: {
-                  epl: { club },
-                },
-              },
-            }) => club.chelsea
-          )
-        )}
-
         <Table />
       </main>
     </div>
   );
 }
 
-export async function getServerSideProps() {
-  const res = await fetch("http://localhost:3000/api/hello");
-  const data = await res.json();
-
-  return {
-    props: {
-      data,
-    },
-  };
-}
