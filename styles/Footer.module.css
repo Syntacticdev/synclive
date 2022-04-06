@@ -1,0 +1,11 @@
+.footer {
+  background-color: #431427;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  font-style: oblique;
+  font-family: Raleway;
+  text-transform: uppercase;
+  font-weight: 400;
+}
